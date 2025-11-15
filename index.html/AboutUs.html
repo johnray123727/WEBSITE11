@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="image/gus1.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>About Us - Bike Shop</title> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><h1>SHOP</h1></div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="newarrivals.html">New Arrivals</a></li>
+            <li><a href="bestseller.html">Best Seller</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="AboutUs.html" class="active">About Us</a></li>    
+            <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+        <div class="menu-bnt">
+            <i class="fa fa-bars"></i>
+        </div>  
+    </nav>
+
+    <section class="about-section">
+        <div class="about-hero">
+            <h1>About Bike Shop</h1>
+            <p>Crafting exceptional cycling experiences since 2010.</p>
+        </div>
+
+        <div class="about-content">
+            <article class="about-card">
+                <h2>Our Mission</h2>
+                <p>We believe that every rider deserves the perfect bike. From cutting-edge road bikes to rugged off-road machines, our goal is to connect cyclists with the equipment that empowers their adventures.</p>
+            </article>
+            <article class="about-card">
+                <h2>What We Do</h2>
+                <ul>
+                    <li>Curate best-in-class bikes from world-leading brands.</li>
+                    <li>Offer expert fitting services and tailored recommendations.</li>
+                    <li>Provide ongoing maintenance, repair, and upgrade support.</li>
+                </ul>
+            </article>
+            <article class="about-card">
+                <h2>Meet the Team</h2>
+                <p>Our passionate crew includes certified mechanics, seasoned racers, and weekend explorers. We ride the products we sell, so we know what it takes to deliver quality, reliability, and pure cycling joy.</p>
+            </article>
+            <article class="about-card">
+                <h2>Visit Our Store</h2>
+                <p>123 Cycle Lane, Velodrome City<br>
+                Open Monday to Saturday, 9:00 AM – 7:00 PM<br>
+                Call us at (555) 012-3456 or email <a href="mailto:hello@bikeshop.com">hello@bikeshop.com</a></p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyrights at <a href="">Bike Shop</a></p>
+    </footer>
+
+    <script>
+        $(".menu-bnt").click(function (){ 
+            $(".navbar .menu").toggleClass("active");
+            $(".menu-bnt i").toggleClass("active");
+        });
+    </script>
+
+</body>
+</html>

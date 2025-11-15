@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="image/gus1.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Gun Shop</title> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><h1>SHOP</h1></div>
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="newarrivals.html">New Arrivals</a></li>
+            <li><a href="bestseller.html">Best Seller</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>    
+            <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+        <!--for responsive button -->
+        <div class="menu-bnt">
+            <i class="fa fa-bars"></i>
+        </div>  
+    </nav>
+
+    <!-- Account Form Section -->
+    <section class="account-form">
+        <h2>Create Account</h2>
+        <form action="signup.php" method="POST">
+            <input type="text" name="name" placeholder="Input Name" required>
+            <input type="email" name="email" placeholder="Enter Your Email" required>
+            <input type="password" name="password" placeholder="Choose a password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm your password" required>
+            <button type="submit" class="primary-btn">Create Account</button>
+        </form>
+    </section>
+
+    <section class="content">
+        <h1>New Gun Arrivals</h1>
+        <p>Get new best gun</p>
+        <a class="primary-btn" href="bestseller.html">Shop Now</a>
+    </section>
+
+    <h1 class="pheading">Check Out Our Latest Guns</h1>
+
+    <footer>
+        <p>Copyrights at <a href="">Gun Shop</a></p>
+    </footer>
+
+    <!-- jQuery for responsive navbar -->
+    <script>
+        $(".menu-bnt").click(function (){ 
+            $(".navbar .menu").toggleClass("active");
+            $(".menu-bnt i").toggleClass("active");
+        });
+    </script>
+
+</body>
+</html>
